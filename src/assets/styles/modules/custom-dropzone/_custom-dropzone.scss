@@ -1,0 +1,85 @@
+.custom-dropzone {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px dashed $border-color-400;
+  padding: $standard-padding;
+  .dropzone-button {
+    background-color: $background-color-950;
+    &:hover {
+      background-color: $background-color-950;
+    }
+  }
+  &.custom-dropzone-multiple {
+    flex-direction: column;
+    justify-content: flex-start;
+    .dropzone-content {
+      flex-direction: column;
+    }
+    .dropzone-preview-container {
+      width: 100%;
+      margin-top: $standard-margin * 2;
+      border: 1px dashed $border-color-400;
+      .preview-content {
+        margin: $standard-margin;
+      }
+    }
+  }
+  .dropzone-content {
+    height: 100%;
+    width: 100%;
+    margin-bottom: $standard-margin;
+    position: relative;
+    outline: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .dropzone-input {
+      outline: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      &:focus, &:active {
+        outline: 0;
+      }
+    }
+    .dropzone-indication-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: $standard-padding * 5;
+      .dropzone-upload-icon {
+        font-size: 56px;
+        margin-bottom: $standard-margin * 3;
+      }
+      .dropzone-upload-text {
+        margin: 0 0 $standard-margin;
+        &.or {
+          margin-bottom: $standard-margin * 1.5
+        }
+      }
+    }
+  }
+  &+.block-ui-container {
+    .feedback {
+      height: 50px !important;
+      width: 50px !important;
+    }
+  }
+  .dropzone-preview-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: $standard-padding;
+    .preview-content {
+      height: 100px;
+      width: 150px;
+      margin-top: $standard-margin;
+    }
+  }
+}
+
