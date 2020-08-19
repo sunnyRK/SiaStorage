@@ -32,7 +32,7 @@ Even, The platform storing the video file details on ethereum blockchain.
 ### 6. After upload you can see metamask transaction to upload detais on ethereum smart contract
 
     - ETH+Sia
-![Screenshot](screenshots/screenshots7.png)
+![Screenshot](image/screenshots7.png)
 
 ### 7. Video Successfully uploaded
 ![Screenshot](screenshots/screenshots6.png)
