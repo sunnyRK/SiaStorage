@@ -10,7 +10,7 @@ const Landing = ({ onRegisterClick, landingLoading }) => (
     className="full-screen"
   >
     <div className="landing">
-      <h2 className="app-name">Sky Storage</h2>
+      <h2 className="app-name">Sia Storage</h2>
       <Button
         type="submit"
         primary
